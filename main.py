@@ -16,8 +16,8 @@ os.chdir(os.getcwd())
 
 # Initialization
 BITBUCKET_URL='http://192.168.1.138:7990/'
-BITBUCKET_USERNAME='admin'
-BITBUCKET_PASSWORD='admin'
+BITBUCKET_USERNAME=sys.argv[2]
+BITBUCKET_PASSWORD=sys.argv[3]
 API_LIST_OF_REPOS_IN_PROJECT=BITBUCKET_URL+'rest/api/1.0/projects/'+sys.argv[1]+'/repos'
 LIST_OF_REPOSITORIES=[]
 LIST_OF_PROJECT_USERS=[]
